@@ -1,24 +1,27 @@
 ## 376 Day 2 Lecture Notes
-
-Due to a plugin called `jekyll-titles-from-headings` which is supported by GitHub Pages by default. The above header (in the markdown file) will be automatically used as the pages title.
-
-If the file does not start with a header, then the post title will be derived from the filename.
-
-This is a sample blog post. You can talk about all sorts of fun things here.
-
 ---
+#### Potential Functions (Leaking Bucket)
 
-### This is a header
+Imagine you have some process(ex. running algorithm or a game) and you wanna show that this process will eventually end(It can't be running forever).
+You look at a function and you want to point out some int quantity that depends on the process: decreasing in each "time step" and it's bounded below.
 
-#### Some T-SQL Code
+Observation: If we can define a potential function for a process then it must eventually terminate. 
 
 ```tsql
-SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
-    , REVERSE('abc')
-FROM dbo.SomeTable s
-    CROSS JOIN dbo.OtherTable o;
+Ex(x): //for int x > 0
+i ← 1 //iteration
+while (x > 0):
+    if (i is odd): 
+        x ← x - 2 //subtract 2 from x
+    else:
+        x ← x + 1 //add 1 to x
+    i ← i + 1
 ```
-
+An ex of this iteration: 
+    Ex(8) → 6 → 7 → 5 ....
+    The first call results to 6 becausse i is odd therefore x -2... and so on
+    
+# Claim: 
 #### Some PowerShell Code
 
 ```powershell
