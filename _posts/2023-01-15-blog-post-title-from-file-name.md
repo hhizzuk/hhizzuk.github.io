@@ -21,7 +21,9 @@ An ex of this iteration:
     Ex(8) → 6 → 7 → 5 ....
     The first call results to 6 becausse i is odd therefore x -2... and so on
     
-# Claim: 
+Claim: Value of x at end of iterations of the while loop when i is odd("time step") defines potential function. (because when i is off x decreases)
+(To Prove This):
+    Decreasing: let x 
 #### Some PowerShell Code
 
 ```powershell
