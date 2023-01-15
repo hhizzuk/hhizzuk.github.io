@@ -23,6 +23,7 @@ An ex of this iteration:
     
 Claim: Value of x at end of iterations of the while loop when i is odd("time step") defines potential function. (because when i is off x decreases)
 (To Prove This):
+
     Decreasing: let x 
 #### Some PowerShell Code
 
